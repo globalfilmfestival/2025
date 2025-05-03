@@ -1,0 +1,44 @@
+{
+  "name": "global-film-festival-2025",
+  "version": "1.0.0",
+  "description": "Web application for Global Film Festival 2025 - an international short film competition",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s .",
+    "build": "rimraf dist && mkdir dist && npm run build:html && npm run build:css && npm run build:js && npm run build:assets",
+    "build:html": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --use-short-doctype index.html -o dist/index.html",
+    "build:css": "cleancss -o dist/styles.min.css styles.css",
+    "build:js": "uglifyjs script.js firebase-config.js firebase-functions.js -c -m -o dist/bundle.min.js",
+    "build:assets": "copyfiles -f *.svg *.jpeg *.jpg *.png dist",
+    "preview": "serve -s dist",
+    "zip": "node -e \"const fs=require('fs');const archiver=require('archiver');const output=fs.createWriteStream('global-film-festival-2025-build.zip');const archive=archiver('zip');output.on('close',function(){console.log('Archive created: '+archive.pointer()+' total bytes');console.log('Archive has been finalized and the output file descriptor has been closed.');});archive.on('error',function(err){throw err;});archive.pipe(output);archive.directory('dist/',false);archive.finalize();\"",
+    "build:zip": "npm run build && npm run zip",
+    "deploy": "npm run build && firebase deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "film festival",
+    "short film",
+    "competition",
+    "dubai",
+    "global film festival"
+  ],
+  "author": "Global Film Festival 2025",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^9.22.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.0",
+    "firebase-tools": "^12.4.0",
+    "html-minifier": "^4.0.0",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "copyfiles": "^2.4.1",
+    "archiver": "^5.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "private": true
+}

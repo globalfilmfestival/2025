@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Film Festival 2025 - Dubai</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">GFF 2025</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#submission">Submit</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Global Film Festival 2025</h1>
+            <h2>Dubai</h2>
+            <p class="tagline">Showcase your talent to the World.</p>
+            <a href="#submission" class="cta-button">Submit Your Film Now</a>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span>Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span>Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About The Festival</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>A Global Platform for Short Film Excellence</h3>
+                    <p>The Global Film Festival 2025 is an international short film competition hosted in the vibrant city of Dubai. We invite filmmakers from around the world to showcase their creativity, vision, and storytelling prowess through short films that captivate, inspire, and challenge audiences.</p>
+                    
+                    <h3>Eligibility</h3>
+                    <ul>
+                        <li>Films must be under 30 minutes in length (including credits)</li>
+                        <li>All genres are welcome: fiction, documentary, experimental</li>
+                        <li>Films must have been completed after January 1, 2023</li>
+                        <li>Submissions must include English subtitles if the original language is not English</li>
+                    </ul>
+                    
+                    <h3>Our Mission</h3>
+                    <p>To discover and promote exceptional filmmaking talent from across the globe, providing a prestigious platform for emerging filmmakers to gain international recognition and launch their careers to new heights.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Dubai Skyline">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission Section -->
+    <section id="submission" class="submission">
+        <div class="container">
+            <h2 class="section-title">Submit Your Film</h2>
+            <div class="submission-info">
+                <div class="timeline">
+                    <h3>Submission Timeline</h3>
+                    <div class="timeline-item" id="early-bird">
+                        <div class="timeline-icon"><i class="fas fa-dove"></i></div>
+                        <div class="timeline-content">
+                            <h4>Early Bird</h4>
+                            <p>₹1,999</p>
+                            <p>May 1 to May 15, 2025</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" id="regular-entry">
+                        <div class="timeline-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="timeline-content">
+                            <h4>Regular Entry</h4>
+                            <p>₹2,999</p>
+                            <p>May 16 to June 27, 2025</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" id="late-entry">
+                        <div class="timeline-icon"><i class="fas fa-hourglass-end"></i></div>
+                        <div class="timeline-content">
+                            <h4>Late Entry</h4>
+                            <p>₹4,999</p>
+                            <p>June 28 to July 5, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="submission-form-container">
+                <form id="submission-form" class="submission-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="filmTitle">Film Title *</label>
+                        <input type="text" id="filmTitle" name="filmTitle" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="synopsis">Film Synopsis *</label>
+                        <textarea id="synopsis" name="synopsis" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="filmLink">Film Link (YouTube/Vimeo) or Upload</label>
+                        <input type="text" id="filmLink" name="filmLink" placeholder="https://">
+                        <p class="or-divider">OR</p>
+                        <div class="file-upload">
+                            <label for="filmUpload" class="file-upload-label">
+                                <i class="fas fa-cloud-upload-alt"></i> Upload Film
+                            </label>
+                            <input type="file" id="filmUpload" name="filmUpload" accept="video/*" class="file-upload-input">
+                            <span id="filmUploadName" class="file-name"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="posterUpload">Film Poster/Thumbnail *</label>
+                        <div class="file-upload">
+                            <label for="posterUpload" class="file-upload-label">
+                                <i class="fas fa-image"></i> Upload Poster
+                            </label>
+                            <input type="file" id="posterUpload" name="posterUpload" accept="image/*" class="file-upload-input" required>
+                            <span id="posterUploadName" class="file-name"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group payment-info">
+                        <h3>Submission Fee: <span id="submissionFee">₹1,999</span></h3>
+                        <p class="fee-period" id="feePeriod">Early Bird Period</p>
+                        <div id="payment-button" class="payment-button">
+                            <button type="button" id="razorpay-button">Proceed to Payment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Best Film</h3>
+                    <p class="award-prize">₹5,00,000</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-video"></i></div>
+                    <h3>Best Director</h3>
+                    <p class="award-prize">₹2,00,000</p>
+                </div>
+                <div class="award-item">
+                    <div class="award-icon"><i class="fas fa-users"></i></div>
+                    <h3>Audience Choice Award</h3>
+                    <p class="award-prize">₹1,00,000</p>
+                </div>
+            </div>
+            
+            <div class="screening-info">
+                <h3>Selected Short Films</h3>
+                <p>All selected films will be screened at the prestigious Global Film Festival in Dubai, providing filmmakers with international exposure and networking opportunities with industry professionals.</p>
+            </div>
+            
+            <div class="grand-prize">
+                <h3>Grand Prize: Become the Next IconStreamz Original Creator</h3>
+                <p>The winner of the Best Film award will receive an exclusive opportunity to create an IconStreamz Original Series, launching their career to new heights with global distribution and professional production support.</p>
+                <a href="#submission" class="cta-button">Submit Your Film Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@globalfilmfest2025.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Dubai, United Arab Emirates</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-qrcode"></i>
+                        <p>Scan to visit our website</p>
+                        <div class="qr-code">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://localhost:3000" alt="QR Code for Global Film Festival 2025">
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Subject</label>
+                            <input type="text" id="contactSubject" name="contactSubject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">GFF 2025</div>
+                <p>&copy; 2025 Global Film Festival. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="confirmation-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Submission Successful!</h3>
+                <p>Thank you for submitting your film to the Global Film Festival 2025. We have sent a confirmation email to your registered email address.</p>
+                <p>Your submission ID: <span id="submission-id"></span></p>
+                <p>A detailed acknowledgment has been sent to your email. Please also check your spam folder if you don't see it in your inbox.</p>
+                <p>A copy of your submission details has been sent to our team at globalfilmfestival.offl@gmail.com.</p>
+                <button id="close-confirmation" class="cta-button">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment QR Code Modal -->
+    <div id="payment-qr-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="payment-qr-message">
+                <i class="fas fa-qrcode"></i>
+                <h3>Complete Your Payment</h3>
+                <p>Scan the QR code below to complete your payment for film submission.</p>
+                <div class="payment-amount">Amount: <span id="payment-amount"></span></div>
+                <div class="payment-qr-code">
+                    <img id="payment-qr-img" src="" alt="Payment QR Code">
+                </div>
+                <p class="payment-note">If QR code scanning doesn't work, use the direct payment link below:</p>
+                <a href="https://rzp.io/i/payment" target="_blank" class="cta-button payment-link">Pay Now</a>
+                <p class="payment-note">After completing payment, click the button below.</p>
+                <button id="payment-completed" class="cta-button">I've Completed Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
